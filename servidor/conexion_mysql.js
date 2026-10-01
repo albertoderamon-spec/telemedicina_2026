@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 const database = {
-    host : 'wexuhdsfvxccqyjphzbo.supabase.com',
-    user : 'postgres',
-    password : 'Alberto12332112aA#',
-    database : 'telemedicina_26',
-    multipleStatements: true
+    host: 'db.wexuhdsfvxccqyjphzbo.supabase.co',
+    user: 'postgres',
+    port:5432,
+    password:'Alberto12332112aA#',
+    database:'postgres'
 };
 
 const conexion = mysql.createConnection(database);
