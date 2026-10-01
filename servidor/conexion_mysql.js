@@ -1,7 +1,7 @@
 const mysql = require('mysql');
 const database = {
     host : 'https://wexuhdsfvxccqyjphzbo.supabase.com',
-    user : 'root',
+    user : 'postgres',
     password : 'Alberto12332112aA'',
     database : 'telemedicina_26',
     multipleStatements: true
