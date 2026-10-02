@@ -1,19 +1,8 @@
-const mysql = require('mysql');
-const database = {
-    host: 'db.wexuhdsfvxccqyjphzbo.supabase.co',
-    user: 'postgres',
-    port:5432,
-    password:'Alberto12332112aA#',
-    database:'postgres'
-};
+const SUPABASE_URL = 'wexuhdsfvxccqyjphzbo.supabase.co';
+const SUPABASE_SERVICE_ROLE_KEY = 'sb_secret_P4pUcv3aak7RqO0DrUojKQ_VL9_qakG';
 
-const conexion = mysql.createConnection(database);
+const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 
-conexion.connect(function (err) {
-    if (err) {
-        console.error('Error en la conexión de la base de datos:',err);
-        process.exit();
-    }
-});
+module.exports = supabase;
 
-module.exports = conexion;
+
